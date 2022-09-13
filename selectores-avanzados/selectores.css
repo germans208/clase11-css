@@ -1,0 +1,114 @@
+/*
+Se utiliza cuando varios elementos comparten una serie de declaraciones iguales, se aplican las reglas CSS a los selectores involucrados
+*/
+
+a{
+  text-decoration: none;
+}
+
+
+h1,
+div,
+p {
+  color: brown;
+}
+
+/*  Se utiliza para seleccionar un elemento que se encuentra dentro de otro elemento */
+
+div p {
+  color: red;
+}
+
+/* Se utiliza para seleccionar un elemento que se encuentra dentro de otro elemento, pero que no es hijo directo */
+
+div > p {
+  color: green;
+}
+
+/*Pseudoclases: Se utilizan para seleccionar elementos basados en su estado o posición en el documento*/
+
+/*first-child: Selecciona el primer elemento hijo de un elemento*/
+
+div ul li:first-child {
+  color: red;
+}
+
+/*last-child: Selecciona el último elemento hijo de un elemento*/
+
+div ul li:last-child {
+  color: red;
+}
+
+/*nth-child: Selecciona un elemento hijo basado en su posición en el documento*/
+
+div ul li:nth-child(2) {
+  color: yellow;
+}
+
+/*nth-last-child: Selecciona un elemento hijo basado en su posición en el documento, contando desde el final*/
+
+div ul li:nth-last-child(2) {
+  color: orange;
+}
+
+/*Pseudoclases pero para hipervinculos*/
+
+/*link: Selecciona los hipervínculos que no han sido visitados*/
+
+a:link {
+  color: aqua;
+}
+
+/*visited: Selecciona los hipervínculos que han sido visitados*/
+
+a:visited {
+  color: blueviolet;
+}
+
+/*hover: Selecciona los hipervínculos cuando el cursor del ratón está encima*/
+
+a:hover {
+  color: orangered;
+}
+
+/*active: Selecciona los hipervínculos cuando están siendo activados*/
+
+a:active {
+  background-color: green;
+  color: white;
+}
+
+/*Pseudoelementos: Se utilizan para seleccionar partes de un elemento*/
+
+/*first-letter: Selecciona la primera letra de un elemento*/
+
+p:first-letter {
+  color: red;
+}
+
+/*first-line: Selecciona la primera línea de un elemento*/
+
+p:first-line {
+  color: blue;
+}
+
+/*before: Inserta contenido antes de un elemento*/
+
+p:before {
+  content: "Hola";
+}
+
+
+/*after: Inserta contenido después de un elemento*/
+
+p:after {
+  content: "Adiós";
+}
+ 
+/*seletion: Selecciona el texto seleccionado por el usuario*/
+
+p::selection {
+  background-color: salmon;
+ 
+}
+
